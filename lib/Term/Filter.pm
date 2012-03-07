@@ -3,7 +3,7 @@ BEGIN {
   $Term::Filter::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Term::Filter::VERSION = '0.01';
+  $Term::Filter::VERSION = '0.02';
 }
 use Moose::Role;
 # ABSTRACT: Run an interactive terminal session, filtering the input and output
@@ -232,7 +232,7 @@ Term::Filter - Run an interactive terminal session, filtering the input and outp
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -258,7 +258,7 @@ version 0.01
 
 =head1 DESCRIPTION
 
-This module is a L<Moose role/Moose::Role> which implements running a program
+This module is a L<Moose role|Moose::Role> which implements running a program
 in a pty while being able to filter the data that goes into and out of it. This
 can be used to alter the inputs and outputs of a terminal based program (as in
 the L</SYNOPSIS>), or to intercept the data going in or out to record it or
@@ -280,7 +280,8 @@ The output filehandle to attach the pty's output to. Defaults to STDOUT.
 
 =head2 pty
 
-The L<IO::Pty::Easy> object that the subprocess will be run under.
+The L<IO::Pty::Easy> object that the subprocess will be run under. Defaults to
+a newly created instance.
 
 =head1 METHODS
 
