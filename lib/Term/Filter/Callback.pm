@@ -3,7 +3,7 @@ BEGIN {
   $Term::Filter::Callback::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Term::Filter::Callback::VERSION = '0.02';
+  $Term::Filter::Callback::VERSION = '0.03';
 }
 use Moose;
 # ABSTRACT: Simple callback-based wrapper for L<Term::Filter>
@@ -62,7 +62,7 @@ Term::Filter::Callback - Simple callback-based wrapper for L<Term::Filter>
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

@@ -3,7 +3,7 @@ BEGIN {
   $Term::Filter::AUTHORITY = 'cpan:DOY';
 }
 {
-  $Term::Filter::VERSION = '0.02';
+  $Term::Filter::VERSION = '0.03';
 }
 use Moose::Role;
 # ABSTRACT: Run an interactive terminal session, filtering the input and output
@@ -232,7 +232,7 @@ Term::Filter - Run an interactive terminal session, filtering the input and outp
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
